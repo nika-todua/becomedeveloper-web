@@ -1,0 +1,51 @@
+.dark_mode_btn {
+    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width:  50px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+.dark_mode_btn svg {
+    width: 26px;
+    height: 26px;
+    pointer-events: none;
+    fill: #000000;
+}
+body.dark_mode .dark_mode_btn {
+    background-color: black;
+}
+body.dark_mode .dark_mode_btn svg {
+    fill: #fff;
+}
+body {
+    background-color: #ffffff !important;
+    color: #000 !important;
+}
+body.dark_mode{
+    background-color: #202020 !important;
+    color: #fff !important;
+}
+body.dark_mode main{
+    background-color: #ffffff;
+}
+body.dark_mode *{
+    color: #000000 !important;
+}
+
+body.dark_mode * button a{
+    color: #fff !important;
+}
+
+body.dark_mode .hero_card_sec_inner .cards_cont .cards_inner .cards_inner_card_box{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1) !important;
+    background-color: rgb(211 211 211) !important;
+}
+body.dark_mode .hero_card_sec_inner .cards_cont .cards_inner .cards_inner_card_box .card_info{
+    color: #535353 !important;
+}
