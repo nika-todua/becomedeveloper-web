@@ -367,3 +367,100 @@ input:checked+label .description {
     -o-object-fit: contain;
     pointer-events: none;
 }
+
+@media screen and (max-width: 1375px){
+    .hero .hero_inner .text_sec h1{
+        font-size: 38px;
+    }
+    .hero .hero_inner .text_sec p{
+        font-size: 16px;
+    }
+    
+    .hero .hero_inner .wrapper{
+        width: fit-content;
+        margin-left: 25px;
+        min-width: 640px;
+        height: 50px;
+    }
+    .container{
+        width: fit-content;
+        height: 260px;
+    }
+    input:checked+label {
+        width: 350px;
+    }
+    .card {
+        width: 70px;
+        height: 260px;
+    }
+    .card>.row>.icon{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 1220px){
+    .hero .hero_inner .text_sec h1 {
+        font-size: 34px;
+    }
+    .hero .hero_inner .text_sec p{
+        font-size: 14px;
+    }
+    .hero .hero_inner .text_sec .btn_box button a {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1130px){
+    .hero .hero_inner .wrapper{
+        min-width: 595px;
+    }
+    .container{
+        height: 240px;
+    }
+    .card>.row>.icon{
+        margin-top: 25px;
+        margin-left: 6px;
+        width: 40px !important;
+        height: 40px;
+    }
+    .card {
+        width: 55px;
+        height: 240px;
+    }
+}
+@media screen and (max-width: 1030px){
+    .hero{
+        height: auto;
+    }
+    .hero .hero_inner{
+        padding-top: 170px;
+        padding-bottom: 85px;
+        flex-wrap: wrap;
+        
+        display: flex;
+        gap: 80px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .hero_inner .text_sec{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .hero .hero_inner .wrapper{
+        width: 100% !important;
+        margin: 0;
+        min-width: none !important;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .hero_inner .wrapper .container{
+        width: 580px !important;
+        right: auto;
+    }
+    input:checked+label{
+        max-width: 350px;
+        width: 100%;
+    }
+}

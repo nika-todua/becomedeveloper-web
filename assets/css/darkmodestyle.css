@@ -10,6 +10,7 @@
     outline: none;
     cursor: pointer;
     background-color: #fff;
+    z-index: 998;
 }
 .dark_mode_btn svg {
     width: 22px;
@@ -25,7 +26,7 @@ body.dark_mode .dark_mode_btn svg {
 }
 body {
     color: #fff !important;
-    background-color: #272727 !important;
+    /* background-color: #272727 !important; */
 }
 body.dark_mode{
     color: #000 !important;
