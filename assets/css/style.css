@@ -1,3 +1,23 @@
+body.dark_mode .hero_card_sec_inner .cards_cont .cards_inner .cards_inner_card_box {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1) !important;
+    background-color: rgb(211 211 211) !important;
+}
+
+body.dark_mode .hero_card_sec_inner .cards_cont .cards_inner .cards_inner_card_box .card_info {
+    color: #535353 !important;
+}
+
+body.dark_mode .card>.row>.description h4,
+body.dark_mode .card>.row>.description p,
+body.dark_mode .card>.row>.icon {
+    color: #fff !important;
+    transition: none !important;
+}
+
+body.dark_mode .header .header_inner .toggle .line {
+    background-color: #000;
+}
+
 main {
     width: 100%;
     min-height: 600px;
@@ -30,8 +50,8 @@ main {
 
 .hero .hero_inner .text_sec h1 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 125%;
+    font-size: 42px;
+    color: #7422de !important;
 }
 
 .hero .hero_inner .text_sec p {
@@ -72,11 +92,11 @@ main {
     color: #fff;
 }
 
-.wrapper {
+.hero .hero_inner .wrapper {
     position: relative;
-    min-width: 720px;
-    width: 51%;
-    min-height: 280px;
+    min-width: 710px;
+    width: 4%;
+    min-height: 282px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +104,7 @@ main {
 
 .container {
     position: relative;
-    right: 0;
+    right: -6px;
     height: 280px;
     position: absolute;
     display: flex;
@@ -106,7 +126,8 @@ main {
     transition: .6s cubic-bezier(.28, -0.03, 0, .99);
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
-.card img{
+
+.card img {
     position: absolute;
     top: 0;
     width: 100%;
@@ -116,6 +137,7 @@ main {
     z-index: 1;
     object-fit: cover;
 }
+
 .card>.row {
     z-index: 99;
     color: white;
@@ -169,9 +191,10 @@ input:checked+label {
     width: 400px;
 }
 
-input:checked+ .card>.row>.description{
+input:checked+.card>.row>.description {
     width: 76%;
 }
+
 input:checked+label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
@@ -209,7 +232,7 @@ input:checked+label .description {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -217,7 +240,7 @@ input:checked+label .description {
 .hero_card_sec_inner .cards_cont .cards_inner .cards_inner_card_box {
     padding: 12px;
     min-width: 370px;
-    width: 32.85%;
+    width: 32.4%;
     aspect-ratio: 16/9;
 
     border-radius: 10px;
@@ -234,7 +257,8 @@ input:checked+label .description {
     justify-content: center;
     align-items: center;
 
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.009);
 
     user-select: none;
     -webkit-user-select: none;
@@ -317,7 +341,7 @@ input:checked+label .description {
     font-weight: 700;
     margin-bottom: 12px;
     font-size: 58px;
-    color: #01dd9b !important;
+    color: #00bd84 !important;
 }
 
 .about .about_inner .text_sec .about_info {

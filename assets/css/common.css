@@ -140,7 +140,10 @@ body.dark_mode .header{
 
         transition: top 300ms, visibility 301ms, opacity 301ms;
     }
-
+    body.dark_mode .header .header_inner nav,
+    body.dark_mode .header .header_inner nav.active{
+        background-color: #fff !important;
+    }
     .header .header_inner nav.active {
         top: 0;
         opacity: 1;
