@@ -66,7 +66,7 @@ body.dark_mode .header .header_inner .toggle .line {
 .hero .hero_inner .text_sec h1 {
     font-weight: 700;
     font-size: 42px;
-    color: #7422de !important;
+    color: #981de4 !important;
 }
 
 .hero .hero_inner .text_sec p {
@@ -105,6 +105,10 @@ body.dark_mode .header .header_inner .toggle .line {
     font-weight: 600;
     font-size: 16px;
     color: #fff;
+    transition: color;
+}
+body.dark_mode .hero .hero_inner .text_sec .btn_box button:hover a{
+    color: #000 !important;
 }
 
 .hero .hero_inner .wrapper {
@@ -614,7 +618,6 @@ button.card-btn {
         position: relative !important;
         padding-top: 170px;
         padding-bottom: 85px;
-        flex-wrap: wrap;
 
         display: flex;
         gap: 80px;
@@ -637,14 +640,100 @@ button.card-btn {
         justify-content: center;
         align-items: center;
     }
-
+    
     .hero .hero_inner .wrapper .container {
         width: 580px !important;
         right: auto;
     }
-
+    
     input:checked+label {
         max-width: 350px;
         width: 100%;
+    }
+}
+@media screen and (max-width: 860px){
+    .hero_card_sec_inner .cards_cont .cards_inner .cards_inner_card_box {
+        min-width: 370.484px;
+        width: 48.4%;
+    }
+    .cards_cont .cards_inner .cards_inner_card_box .card_icon{
+        width: 45px;
+        height: 45px;
+    }
+    .cards_cont .cards_inner .cards_inner_card_box .card_icon i, .cards_cont .cards_inner .cards_inner_card_box .card_icon svg {
+        width: 26px;
+        height: 26px;
+        font-size: 26px;
+    }
+    .cards_cont .cards_inner .cards_inner_card_box .card_title{
+        font-size: 20px;
+    }
+    .cards_cont .cards_inner .cards_inner_card_box .card_info{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 685px){
+    .hero .hero_inner .text_sec{
+        max-width: 465px;
+        width: 100%;
+    }
+    .hero .hero_inner .wrapper{
+        position: relative;
+        margin: 0 auto;
+        width: 100% !important;
+        min-width: 0 !important;
+        height: fit-content;
+
+        display: flex;
+
+    }
+    .hero .hero_inner .wrapper .container {
+        position: relative;
+        width: 100% !important;
+        min-width: none !important;
+        height: fit-content !important;
+
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin: 0 !important;
+        min-width: fit-content !important;
+        height: 80px;
+        transition: all .3s ease;
+    }
+    .description p{
+        max-height: 51px;
+        text-overflow: ellipsis;
+    }
+    .hero .hero_inner .wrapper input:checked+label{
+        max-width: none !important;
+        width: 100% !important;
+        height: 280px !important;
+    }
+}
+@media screen and (max-width: 671px){
+    .hero_card_sec_inner .cards_cont .cards_inner .cards_inner_card_box{
+        min-width: 0;
+        max-width: 346.469px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 455px){
+    .hero .hero_inner .wrapper input:checked+label{
+        height: 240px !important;
+    }
+}
+@media screen and (max-width: 360px){
+    .description h4{
+        font-size: 14px;
+    }
+    .description p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 345px){
+    .hero .hero_inner .wrapper input:checked+label{
+        height: 180px !important;
     }
 }

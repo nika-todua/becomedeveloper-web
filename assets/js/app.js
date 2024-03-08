@@ -20,13 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let herocardInner = document.querySelector(".hero_card_sec_inner .cards_cont .cards_inner")
 
-        let cardArr = [
-            {
+        let cardArr = [{
                 icon: 'icon',
                 name: 'card name1',
                 cartInfo: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore porro eos quos, doloremque tempore ipsam adipisci ratione veritatis minima debitis sint hic similique ut reiciendis.'
             },
-            {   
+            {
                 icon: 'icon',
                 name: 'card name2',
                 cartInfo: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore porro eos quos, doloremque tempore ipsam adipisci ratione veritatis minima debitis sint hic similique ut reiciendis.'
@@ -59,16 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
 
         cardArr.splice(6, cardArr.length)
-        
+
         herocardInner.innerHTML = ""
 
         for (const i in cardArr) {
-            herocardInner.innerHTML +=
-                `<div class="cards_inner_card_box">
-                    <div class="card_icon">${cardArr[i].icon}</div>
-                    <h2 class="card_title font">${cardArr[i].name}</h2>
-                    <p class="card_info font">${cardArr[i].cartInfo}</p>
-                </div>`;
+            herocardInner.innerHTML += `<div class="cards_inner_card_box">
+                                            <div class="card_icon">${cardArr[i].icon}</div>
+                                            <h2 class="card_title font">${cardArr[i].name}</h2>
+                                            <p class="card_info font">${cardArr[i].cartInfo}</p>
+                                        </div>`;
         }
     }
 
@@ -76,8 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function heroSlider() {
 
-        let heroSliderArr = [
-            {
+        let heroSliderArr = [{
                 iconInfo: '1',
                 title: 'Front - End',
                 info: 'Front-end develops website interfaces using HTML, CSS, and JavaScript for responsiveness',
@@ -103,31 +100,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 imgSrc: 'assets/img/gamedev.png',
             }
         ]
-        
+
         let heroSlider = document.querySelector(".hero_slider_cont")
 
         heroSliderArr.splice(4, heroSliderArr.length)
-        
+
+        heroSlider.innerHTML = ""
+
         for (const i in heroSliderArr) {
-            heroSlider.innerHTML +=`<input type="radio" name="slide" id="c${i}" ${heroSliderArr[i].active}>
-                                    <label for="c${i}" class="card">
-                                        <img src="${heroSliderArr[i].imgSrc}" loading="lazy" alt="slider photos">
-                                        <div class="row">
-                                            <div class="icon font">${heroSliderArr[i].iconInfo}</div>
-                                            <div class="description font">
-                                                <h4>${heroSliderArr[i].title}</h4>
-                                                <p>${heroSliderArr[i].info}</p>
-                                            </div>
-                                        </div>
-                                    </label>`
+            heroSlider.innerHTML += `<input type="radio" name="slide" id="c${i}" ${heroSliderArr[i].active}>
+                                     <label for="c${i}" class="card">
+                                         <img src="${heroSliderArr[i].imgSrc}" loading="lazy" alt="slider photos">
+                                         <div class="row">
+                                             <div class="icon font">${heroSliderArr[i].iconInfo}</div>
+                                             <div class="description font">
+                                                 <h4>${heroSliderArr[i].title}</h4>
+                                                 <p>${heroSliderArr[i].info}</p>
+                                             </div>
+                                         </div>
+                                     </label>`
         }
     }
 
     coursesCard()
 
     function coursesCard() {
-        let coursesArr = [
-            {
+        let coursesArr = [{
                 icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>',
                 title: 'Free',
                 info: '2 Base Leason About Html Css For Free',
@@ -154,13 +152,13 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
 
         let coursescardinner = document.querySelector(".courses_cards_inner")
-        
+
         coursescardinner.innerHTML = ""
-        
+
         coursesArr.splice(4, coursesArr.length)
-        
+
         for (let i in coursesArr) {
-           coursescardinner.innerHTML += `<div class="card-wrap">
+            coursescardinner.innerHTML += `<div class="card-wrap">
                                               <div class="card-header">${coursesArr[i].icon}</div>
                                               <div class="card-content">
                                                   <h1 class="card-title">${coursesArr[i].title}</h1>
@@ -168,11 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                                   <h5 class="card-title">${coursesArr[i].footerText}</h5>
                                                   <button class="card-btn font">Join Now!</button>
                                               </div>
-                                          </div>`; 
+                                          </div>`;
         }
-        
-        
+
+
     }
-    
+
 
 })
