@@ -155,6 +155,11 @@ body.dark_mode .hero .hero_inner .text_sec .btn_box button:hover a{
     display: block;
     z-index: 1;
     object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 .card>.row {
@@ -360,7 +365,7 @@ input:checked+label .description {
     font-weight: 700;
     margin-bottom: 12px;
     font-size: 58px;
-    color: #00bd84 !important;
+    color: #981de4 !important;
 }
 
 .about .about_inner .text_sec .about_info {
@@ -408,7 +413,7 @@ input:checked+label .description {
     text-align: center;
     font-weight: 600;
     font-size: 48px;
-    color: #05cd91 !important;
+    color: #981de4 !important;
 }
 
 .courses_cards_inner {
@@ -548,7 +553,7 @@ button.card-btn {
 
     .hero .hero_inner .wrapper {
         width: fit-content;
-        margin-left: 25px;
+        margin-left: 42px;
         min-width: 640px;
         height: 50px;
     }
@@ -607,6 +612,10 @@ button.card-btn {
         width: 55px;
         height: 240px;
     }
+    .about .about_inner .img_box{
+        margin-left: 20px;
+        margin-right: 0px
+    }
 }
 
 @media screen and (max-width: 1030px) {
@@ -649,6 +658,48 @@ button.card-btn {
     input:checked+label {
         max-width: 350px;
         width: 100%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .card-wrap {
+        transition: none;
+    }
+    .hero .hero_inner .text_sec .btn_box button:hover {
+        background-color: #7a13ba;
+        border: 3px solid #7a13ba;
+        color: #fff;
+    }
+    body.dark_mode .hero .hero_inner .text_sec .btn_box button:hover a{
+        color: #fff !important;
+    }
+    .card-wrap:hover{
+        transform: scale(1);
+    }
+}
+@media screen and (max-width: 990px) {
+    .about{
+        height: auto;
+    }
+    .about .about_inner{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .about .about_inner .text_sec{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 650px;
+    }
+    .about .about_inner .text_sec .about_sec_title,
+    .courses .courses_inner .sec_title{
+        font-size: 48px;
+    }
+    .about .about_inner .img_box{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 450px;
     }
 }
 @media screen and (max-width: 860px){
@@ -719,9 +770,24 @@ button.card-btn {
         width: 100%;
     }
 }
+@media screen and (max-width: 480px){
+    .about .about_inner .text_sec .about_sec_title,
+    .courses .courses_inner .sec_title{
+        font-size: 44px;
+    }
+    .about .about_inner .text_sec .about_info{
+        font-size: 14px;
+    }
+}
 @media screen and (max-width: 455px){
     .hero .hero_inner .wrapper input:checked+label{
         height: 240px !important;
+    }
+}
+@media screen and (max-width: 365px){
+    .about .about_inner .text_sec .about_sec_title,
+    .courses .courses_inner .sec_title {
+        font-size: 40px;    
     }
 }
 @media screen and (max-width: 360px){
