@@ -117,6 +117,67 @@ body.dark_mode .header{
 .header .header_inner .toggle.active .line:nth-child(3) {
     transform: translateY(-12px) rotate(45deg);
 }
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+
+    border-top: 1px solid rgb(62, 62, 62);
+    background-color: #1a1a1a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.dark_mode .footer{
+    border-top: 1px solid rgb(214, 214, 214) !important;
+    background-color: rgb(244, 244, 244) !important;
+}
+.footer .footer_inner{
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .footer_inner .footer_text{
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.footer .footer_inner .footer_text span{
+    font-size: 16px;
+}
+.footer .footer_inner .social_list{
+    display: flex;
+    gap: 20px;
+}
+.footer .footer_inner .social_list li{
+    list-style-type: none;
+}
+.footer .footer_inner .social_list li a{
+    text-decoration: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+.footer .footer_inner .social_list li a i,
+.footer .footer_inner .social_list li a svg{
+    width: 28px;
+    height: 28px;
+    fill: #fff;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width: 820px) {
     .header .header_inner {
