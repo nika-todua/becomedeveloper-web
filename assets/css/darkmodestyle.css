@@ -1,4 +1,5 @@
 .dark_mode_btn {
+    position: sticky;
     position: absolute;
     position: fixed;
     bottom: 20px;
