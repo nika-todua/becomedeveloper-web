@@ -13,11 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     heroCardSort()
 
     function heroCardSort() {
-        // ? ეს არის პირველი ქარდის ფუნქცია და აქედან მოდის იმ ქარდების მონაცემები
-        // ? მარტო შესაცვლელი გაქვს ტექსტები და აიქონები, მაქსიმუმ 6 ქარდი უნდა იყოს.
-        // ? აიქონები ნახე ამ საიტზე > https://remixicon.com/
-        // ? და თუ სხვა საიტს გამოიყენებ მაშინ svg კოდით წამოიღე აიქონი
-
         let herocardInner = document.querySelector(".hero_card_sec_inner .cards_cont .cards_inner")
 
         let cardArr = [{
